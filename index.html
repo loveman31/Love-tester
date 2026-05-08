@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Tester - Test din kjærlighet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>💕 Love Tester 💕</h1>
+            <p class="subtitle">Test kompatibiliteten mellom deg og din crush!</p>
+            
+            <form id="loveForm">
+                <div class="form-group">
+                    <label for="name1">Ditt navn:</label>
+                    <input type="text" id="name1" placeholder="Skriv ditt navn" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="name2">Navn på personen:</label>
+                    <input type="text" id="name2" placeholder="Skriv hennes/hans navn" required>
+                </div>
+                
+                <button type="submit" class="btn">Test kjærligheten!</button>
+            </form>
+            
+            <div id="result" class="result hidden">
+                <h2>Resultatet:</h2>
+                <div class="score-container">
+                    <div class="score-circle">
+                        <span id="scorePercentage" class="percentage">0%</span>
+                    </div>
+                </div>
+                <p id="resultMessage" class="result-message"></p>
+                <button id="tryAgainBtn" class="btn btn-secondary">Prøv igjen</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
